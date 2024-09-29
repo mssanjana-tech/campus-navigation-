@@ -53,28 +53,30 @@
                 <div class="content">
                     <div class="name">Here,you reached computer lab 1..!</div>
                     <div class="des"></div>
+                    <div class="button-wrapper"></div>
                     <button class="confetti-button">reached🥳</button>
-                    <div class="button-container">
+
+                    <div class="button-container"></div>
                         <a href="../home.html"><button id="button1">back</button></a>
-                        <script
-                            src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-                        <script>
-                            document.getElementsByClassName("confetti-button")[0].addEventListener("click", () => {
-                                let canvas = document.createElement("canvas");
-                                let container = document.getElementsByClassName("button-wrapper")[0];
-                                canvas.width = 600;
-                                canvas.height = 600;
+                    <script
+                        src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+                    <script>
+                        document.getElementsByClassName("confetti-button")[0].addEventListener("click", () => {
+                            let canvas = document.createElement("canvas");
+                            let container = document.getElementsByClassName("button-wrapper")[0];
+                            canvas.width = 600;
+                            canvas.height = 600;
 
-                                container.appendChild(canvas);
+                            container.appendChild(canvas);
 
-                                let confetti_button = confetti.create(canvas);
-                                confetti_button().then(() => container.removeChild(canvas));
-                            });
-                        </script>
-                    </div>
+                            let confetti_button = confetti.create(canvas);
+                            confetti_button().then(() => container.removeChild(canvas));
+                        });
+                    </script>
                 </div>
-
             </div>
+
+        </div>
                
                     <div class="item" style="background-image: url(/Assets/blank.jpg);">
                         <div class="content">
